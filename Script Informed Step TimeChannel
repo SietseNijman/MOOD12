@@ -1,0 +1,38 @@
+// code snapshot at 2021-06-10 13:10:57 saved by Jun Li Jeung
+
+if(data.h==12 && data.m == 30 && data.s <2) { // before lunch
+DF.telegramParticipant('u927bdf46e756423e','Before you eat your lunch, please indicate whether you are going to eat alone or together, and slide your mood on the slider. Verify it by clicking on the before meal-button.')
+DF.telegramParticipant('u3cc2f49ccf534202','Before you eat your lunch, please indicate whether you are going to eat alone or together, and slide your mood on the slider. Verify it by clicking on the before meal-button.')
+DF.telegramParticipant('ub4bd8f3e33554792','Before you eat your lunch, please indicate whether you are going to eat alone or together, and slide your mood on the slider. Verify it by clicking on the before meal-button.')
+
+}
+
+
+if(data.h==13 && data.m == 15 && data.s <2) { // after lunch
+DF.telegramParticipant('u927bdf46e756423e','I hope you enjoyed your lunch, please indicate whether you ate alone or together, and slide your mood on the slider. Verify it by clicking on the after meal-button.')
+DF.telegramParticipant('u3cc2f49ccf534202','I hope you enjoyed your lunch, please indicate whether you ate alone or together, and slide your mood on the slider. Verify it by clicking on the after meal-button.')
+DF.telegramParticipant('ub4bd8f3e33554792','I hope you enjoyed your lunch, please indicate whether you ate alone or together, and slide your mood on the slider. Verify it by clicking on the after meal-button.')
+
+}
+
+
+
+if(data.h==18 && data.m == 00 && data.s <2) { // before dinner
+DF.telegramParticipant('u927bdf46e756423e','Before you eat your dinner, please indicate whether you are going to eat alone or together, and slide your mood on the slider. Verify it by clicking on the before meal-button.')
+DF.telegramParticipant('u3cc2f49ccf534202','Before you eat your dinner, please indicate whether you are going to eat alone or together, and slide your mood on the slider. Verify it by clicking on the before meal-button.')
+DF.telegramParticipant('ub4bd8f3e33554792','Before you eat your dinner, please indicate whether you are going to eat alone or together, and slide your mood on the slider. Verify it by clicking on the before meal-button.')
+
+}
+
+if(data.h==19 && data.m == 00&& data.s <2) { // after dinner
+DF.telegramParticipant('u927bdf46e756423e','I hope you enjoyed your dinner, please indicate whether you ate alone or together, and slide your mood on the slider. Verify it by clicking on the after meal-button.')
+DF.telegramParticipant('u3cc2f49ccf534202','I hope you enjoyed your dinner, please indicate whether you ate alone or together, and slide your mood on the slider. Verify it by clicking on the after meal-button.')
+DF.telegramParticipant('ub4bd8f3e33554792','I hope you enjoyed your dinner, please indicate whether you ate alone or together, and slide your mood on the slider. Verify it by clicking on the after meal-button.')
+
+}
+
+if(data.h==21 && data.m == 01 && data.s <2) { // at night
+DF.telegramParticipant('u927bdf46e756423e','What activity increased your mood the most today? What were you doing during your mealtimes? (lunch, dinner)')
+DF.telegramParticipant('u3cc2f49ccf534202','What activity increased your mood the most today? What were you doing during your mealtimes? (lunch, dinner)')
+DF.telegramParticipant('ub4bd8f3e33554792','What activity increased your mood the most today? What were you doing during your mealtimes? (lunch, dinner)')
+}
