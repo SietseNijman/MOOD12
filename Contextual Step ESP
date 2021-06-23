@@ -1,0 +1,46 @@
+#include "DFDataset.h"
+
+// SSID of your Wifi network, the library currently does not support WPA2 Enterprise networks
+const char* ssid = "IPhone";
+// Password of your Wifi network.
+const char* password = "12345678";
+
+// put the adress of Data Foundry here
+const char* datafoundry = "data.id.tue.nl";
+
+// create connection to dataset with server address, dataset id, and the access token
+DFDataset iot(datafoundry, 1044, "OGYlaXyemZjWteIRuha3uRm7ZDfsyk4T6NO3QEajF+9A/s7fFc/xro9c0a3XKDvu");
+
+// Potentiometer is connected to GPIO 34 (Analog ADC1_CH6)
+const int potPin = 34;
+const int pushButton = 22;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+  delay (1000);
+
+  // establish Wifi connection
+  WiFi.begin(ssid, password);
+  Serial.println("Connecting to WiFi..");
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
+    Serial.println('.');
+  }
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  int buttonValue = digitalRead (pushButton);
+
+  if (buttonValue == HIGH) {
+    // Reading potentiometer value
+    int potValue = map(analogRead(potPin), 0, 4095, 0, 10);
+    Serial.println (potValue);
+    //iot stuff
+    iot.addInt("numericalTimingData", millis());
+    iot.addInt("Hapiness", potValue);
+    iot.logItem();
+    delay (1000);
+  }
+}
