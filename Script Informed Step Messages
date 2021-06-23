@@ -1,0 +1,21 @@
+if(data.moodMessage == 0) {
+	DF.telegramParticipant("u3cc2f49ccf534202", "Enjoy your meal :D");
+}
+if(data.moodMessage == 1) {
+	DF.telegramParticipant("u3cc2f49ccf534202", "Hey, we see that your mood did not improve. Maybe you could invite a friend over for your next meal to improve your mood?");
+}
+if(data.moodMessage == 2) {
+	DF.telegramParticipant("u3cc2f49ccf534202", "Hey, your mood has improved a little! Maybe you could invite a friend over for your next meal to improve your mood more?");
+} 
+if(data.moodMessage == 3) {
+	DF.telegramParticipant("u3cc2f49ccf534202", "Hey, your mood has improved a lot, nice! Maybe you could invite a friend over for your next meal to improve your mood even more! :o");
+} 
+if(data.moodMessage == 4) {
+	DF.telegramParticipant("u3cc2f49ccf534202", "Hey, we see that your mood did not improve even when you're accompanied by a friend, why is that?");
+} 
+if(data.moodMessage == 5) {
+	DF.telegramParticipant("u3cc2f49ccf534202", "Hey, your mood improved a little! How could we improve your mood even more?");
+} 
+if(data.moodMessage == 6) {
+	DF.telegramParticipant("u3cc2f49ccf534202", "Hey, your mood has improved a lot! Nice! How could we improve your mood even more?");
+} 
